@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+    background-image:url('images/bg.png');
+	background-repeat:repeat;
+  color: white;
+  font-size: 21px;
+  font-family: "Press Start";
+  line-height: 117%;
+}
+
+/* General Positioning */
+
+#header {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+	background-image:url('images/bg_header.png');
+	background-repeat:repeat;
+	background-color:#E60012;
+  border-bottom: 5px solid #ffae00;
+  vertical-align: middle;
+}
+
+#header-right {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+	text-decoration: none;
+}
+#header-left {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+	text-decoration: none;
+}
+
+iframe {
+  position: absolute;
+  margin-top: 75px;
+  width: 100%;
+  height: 580px;
+  border: 0;
+  z-index: -96;
+}
+
+#after {
+  position: absolute;
+  margin-top: 650px;
+  width: 100%;
+  background-color: rgb(0 0 0 / 22%);
+}
+
+/* #after bar */
+
+.bar1 {
+  margin: 7px;
+  width: 280px;
+  text-align: center;
+}
+
+#out_editor { float: left; }
+
+#out_mapselect { float: right; }
+
+#out_options { margin: 7px auto; }
+
+#out_keymapping { margin: 7px auto; }
+
+#in_options { position:absolute; z-index:-1;}
+
+#in_keymapping:hover { height: 400px;}
+
+#in_keymapping input {
+  width: 80px; 
+  margin-right: 20px;
+  float: right; 
+  font-family: "Press Start";
+  text-transform: uppercase;
+}
+
+#in_keymapping input:focus { background-color:#0099ff; }
+
+.expander {
+  margin-top: -24px;
+  padding: 7px;
+  width: 256px;
+  height: 24px;
+  display: none;
+  z-index: 98;
+  background: #009966;
+  border: 3px solid #99ffcc;
+  border-radius: 7px;
+  box-shadow: 0 3px 7px black inset;
+  font-size: 14px;
+}
+.bar1:hover .expander {
+  margin-top: -300px;
+  height: 280px;
+  display: block;
+}
+
+.bar1 div.label {
+  margin: 10px 14px;
+  font-size: 14px;
+  color: #ffae00;
+}
+
+/* Individual map buttons */
+
+.maprectout {
+  margin: 1px 3px;
+  display: inline-block;
+  background: #ffcc33;
+  border: 3px outset;
+  cursor: pointer;
+  color: black;
+  font-size: 14px;
+}
+
+.maprect {
+  width: 49px;
+  height: 20px;
+}
+
+.maprect.off {
+  background: #996600;
+}
+
+.maprect.big { width: 231px; }
+.maprect.larger { margin: 14px 0; }
+.maprect.giant { 
+  padding: 28px 0 70px 0;
+  font-size: 17px;
+  line-height: 210%;
+}
+
+.infobox{
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 18px;
+  color: #323232;
+  width: 70%;
+  height: auto;
+  margin: 100px auto 150px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  -webkit-box-shadow:  0px 0px 10px 0px #f5f5f5;
+  box-shadow:  0px 0px 10px 0px #f5f5f5;
+}
+p {
+  line-height: 1.3;
+}
+
+/* Create two equal columns that floats next to each other */
+.column-info1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 500px;
+    background-image: url(images/info1_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.column-info2 {
+  float: right;
+  width: 66%;
+  padding: 10px;
+  height: 500px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Footer */
+.footer {
+   position:absolute;
+   background-image: repeating-linear-gradient(
+-45deg,#302f2f,#302f2f 6px,#2a2929 0,#2a2929 12px);
+   bottom:0;
+   width:100%;
+   height:50px;
+   text-align: center;
+   padding-top: 25px;
+}
